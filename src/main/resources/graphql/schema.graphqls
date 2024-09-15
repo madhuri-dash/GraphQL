@@ -1,0 +1,22 @@
+type Order{
+    orderId : ID
+    name : String
+    category : String
+    price : Int
+    stock : Int
+}
+
+type Query{
+    getOrders:[Order]
+    getOrdersByCategory(category:String):[Order]
+}
+
+type Mutation{
+    updateStock(id:ID,stock:Int):Order
+    addStock(id:ID,quantity:Int):Order
+}
+
+type Subscription{
+    sendMessage(message:String):String
+    greeting:String
+}

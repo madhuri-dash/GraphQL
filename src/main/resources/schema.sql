@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS Order;
+CREATE TABLE  Order (
+    order_id INT AUTO_INCREMENT PRIMARY KEY ,
+    name VARCHAR(50) NOT NULL,
+    category VARCHAR(20) NOT NULL,
+    price INT NOT NULL,
+    stock INT NOT NULL
+    );
